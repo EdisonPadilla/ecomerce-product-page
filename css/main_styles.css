@@ -25,11 +25,6 @@
   src: url(../assets/fonts/KumbhSans-VariableFont_wght.ttf);
 }
 
-body {
-  font-family: kumbh sans, sans-serif;
-  font-size: 16px;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -37,6 +32,15 @@ a {
 
 img {
   max-width: 100%;
+}
+
+body {
+  font-family: kumbh sans, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  color: var(--very-dark-blue);
 }
 
 .nav-bar {
@@ -122,7 +126,7 @@ img {
   height: 22px;
 }
 
-.product-image-container {
+.container-1 {
   position: relative;
   /* display: flex; */
   overflow: hidden;
@@ -136,7 +140,7 @@ img {
   min-width: 100%;
 }
 
-.product-image-container .slider-btn {
+.container-1 .slider-btn {
   position: absolute;
   top: 46%;
   padding: 1%;
@@ -150,11 +154,11 @@ img {
   background-color: var(--white);
 }
 
-.product-image-container .previous-btn {
+.container-1 .previous-btn {
   left: 4%;
 }
 
-.product-image-container .next-btn {
+.container-1 .next-btn {
   right: 4%;
 }
 
@@ -163,3 +167,56 @@ img {
   display: block;
 }
 
+.container-2 {
+  padding: 16px 4%;
+}
+
+.container-2 .subtitle {
+  margin-top: 0;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
+.container-2 .title {
+  margin-top: 0;
+  padding-right: 8%;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.container-2 .paragraph {
+}
+
+.container-2 .price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-container p:first-of-type {
+  display: flex;
+  align-items: center;
+}
+
+.price-container .final-price {
+  font-size: 26px;
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.price-container .discount {
+  padding: 2px 6px;
+  min-height: 100%;
+  font-weight: 700;
+  color: var(--orange);
+  vertical-align: middle;
+  background-color: var(--pale-orange);
+  border-radius: 4px;
+}
+
+.price-container .starting-price {
+  color: var(--grayish-blue);
+  text-decoration: line-through;
+}
