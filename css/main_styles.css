@@ -165,6 +165,7 @@ main {
   background-color: var(--white);
   border-radius: 8px;
   z-index: 21;
+  display: none;
 }
 
 .cart-information-box > p {
