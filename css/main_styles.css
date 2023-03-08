@@ -194,7 +194,7 @@ body {
   z-index: 21;
   /* display: none; */
   opacity: 0;
-  transition: all 400ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .cart-information-box.show {
