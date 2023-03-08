@@ -140,7 +140,7 @@ body {
 }
 
 .nav-menu-box {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   height: 100vh;
@@ -192,7 +192,13 @@ body {
   background-color: var(--white);
   border-radius: 8px;
   z-index: 21;
-  display: none;
+  /* display: none; */
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+}
+
+.cart-information-box.show {
+  opacity: 1;
 }
 
 .cart-information-box > p {
