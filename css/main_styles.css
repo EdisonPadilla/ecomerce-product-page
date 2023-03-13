@@ -267,6 +267,7 @@ body {
 
 .product-image-box {
   display: flex;
+  transition: all 400ms;
 }
 
 .product-image-box .img-box {
